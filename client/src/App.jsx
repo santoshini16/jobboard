@@ -14,6 +14,7 @@ import AdminJobs from "./components/admin/AdminJobs";
 import PostJob from './components/admin/PostJob'
 import Applicants from './components/admin/Applicants'
 import ProtectedRoute from './components/admin/ProtectedRoute'
+import VerifyEmail from './components/auth/VerifyEmail'
 
 
 const appRouter = createBrowserRouter([
@@ -45,7 +46,7 @@ const appRouter = createBrowserRouter([
     path: "/profile",
     element: <Profile />
   },
-  // admin ke liye yha se start hoga
+  
   {
     path:"/admin/companies",
     element: <ProtectedRoute><Companies/></ProtectedRoute>
@@ -70,6 +71,10 @@ const appRouter = createBrowserRouter([
     path:"/admin/jobs/:id/applicants",
     element:<ProtectedRoute><Applicants/></ProtectedRoute> 
   },
+  {
+    path:"/verify-email/:token",
+    element:<VerifyEmail/>
+  }
 
 ])
 function App() {
