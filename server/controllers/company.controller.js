@@ -5,6 +5,7 @@ import cloudinary from "../utils/cloudinary.js";
 export const registerCompany = async (req, res) => {
     try {
         const { companyName } = req.body;
+         console.log('company name', companyName)
         if (!companyName) {
             return res.status(400).json({
                 message: "Company name is required.",

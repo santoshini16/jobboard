@@ -5,6 +5,7 @@ export const postJob = async (req, res) => {
     try {
         const { title, description, requirements, salary, location, jobType, experience, position, companyId,newsLettersSent } = req.body;
         const userId = req.id;
+        console.log('userid',userId)
 
         if (!title || !description || !requirements || !salary || !location || !jobType || !experience || !position || !companyId) {
             return res.status(400).json({
