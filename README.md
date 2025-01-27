@@ -71,12 +71,12 @@ A fully functional **Job Board Application** that connects recruiters and job se
 
 ## 📂 Folder Structure
 
-/models        - Mongoose models for User, Job, Company, Application.
-/controllers   - Handles core backend logic for users, jobs, companies, and applications.
-/utils         - Utility functions like email sending and file handling.
-/routes        - Express routes for different API endpoints.
-/public        - Static assets.
-/client        - Frontend application (React).
+models        - Mongoose models for User, Job, Company, Application.
+controllers   - Handles core backend logic for users, jobs, companies, and applications.
+utils         - Utility functions like email sending and file handling.
+routes        - Express routes for different API endpoints.
+public        - Static assets.
+client        - Frontend application (React).
 ## 🚀 How to Run the Project Locally
 
 ### Prerequisites:
